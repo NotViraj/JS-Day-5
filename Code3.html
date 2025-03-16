@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call Stack</h1>
+    <p id="a"></p>
+    <script>
+
+        function xyz(a,b) {
+            return a+b
+        }
+
+        function xzy(a,b) {
+            return xyz(a,b)/2
+        }
+
+        let ans = xzy(1,2)
+        document.getElementById("a").innerHTML=ans
+
+    </script>
+</body>
+</html>
